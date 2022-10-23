@@ -9,7 +9,7 @@
  */
 int print_hex(unsigned int n, unsigned int c)
 {
-	unsigned int a[8];
+	unsigned int a[9];
 	unsigned int i, m, sum;
 	char diff;
 	int count;
@@ -20,7 +20,7 @@ int print_hex(unsigned int n, unsigned int c)
 	else
 		diff = 'a' - ':';
 	a[0] = n / m;
-	for (i = 1; i < 8; i++)
+	for (i = 1; i < 9; i++)
 	{
 		m /= 16;
 		a[i] = (n / m) % 16;
